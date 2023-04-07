@@ -29,6 +29,9 @@ public class Vector3 {
   public Vector3 add(Vector3 that) {
     return new Vector3(this.x + that.x, this.y + that.y, this.z + that.z);
   }
+  public Vector3 sub(Vector3 that) {
+    return new Vector3(this.x - that.x, this.y - that.y, this.z - that.z);
+  }
 
   public Vector3 mult(double c) {
     return new Vector3(c * x, c * y, c * z);
@@ -48,7 +51,7 @@ public class Vector3 {
   }
 
   public double dot(Vector3 that) {
-    return this.x * that.x + this.y * that.y + this.z + that.z;
+    return this.x * that.x + this.y * that.y + this.z * that.z;
   }
 
   static public Vector3 cross(Vector3 a, Vector3 b) {

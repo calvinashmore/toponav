@@ -8,6 +8,14 @@ public class Vector2 {
     this.y = y;
   }
 
+  public double getX() {
+    return x;
+  }
+
+  public double getY() {
+    return y;
+  }
+
   public Vector2 add(Vector2 that) {
     return new Vector2(this.x + that.x, this.y + that.y);
   }
